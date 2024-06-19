@@ -21,7 +21,7 @@ const Login = () => {
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-sm font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                Everybody Can Sign In(conditions in placeholder)
+                All Users Can Sign In(conditions in placeholder)
               </h1>
             
               <form className="space-y-4 md:space-y-6" action="#">
@@ -30,7 +30,7 @@ const Login = () => {
                     htmlFor="name"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
-                    User Name(Random)
+                    User Name(Your Name)
                   </label>
                   <input
                     type="text"
