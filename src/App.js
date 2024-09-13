@@ -4,7 +4,7 @@ import Main from "./Components/Main";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SingleProduct from "./Components/SingleProduct";
 
-import Login from "./Components/Login";
+
 
 function App() {
   
