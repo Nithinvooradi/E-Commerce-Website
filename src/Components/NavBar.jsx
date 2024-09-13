@@ -21,7 +21,7 @@ const NavBar = () => {
         <div className="flex  flex-row items-center ">
           <div>
             <p className="font-inter text-xl font-bold tracking-normal leading-none text-center mr-12">
-              <span>Welcome </span>{" "}
+              <span>Welcome </span>
               
             </p>
           </div>
