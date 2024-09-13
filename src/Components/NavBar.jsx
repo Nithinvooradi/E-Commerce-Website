@@ -3,13 +3,13 @@ import logo from "../assets/images/logo.png";
 import { FaRegHeart } from "react-icons/fa6";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import Cart1 from "./Cart1";
-import { useDispatch, useSelector } from "react-redux";
-import { logout } from "../features/Authslice";
+import {  useSelector } from "react-redux";
+
 
 const NavBar = () => {
-  const dispatch = useDispatch();
+  
   const totalAmount = useSelector((state) => state.cart.totalAmount);
-  const user = useSelector((state) => state.auth.user);
+  
   const { name } = user;
   const [open, setOpen] = useState(false);
   return (
@@ -22,7 +22,7 @@ const NavBar = () => {
           <div>
             <p className="font-inter text-xl font-bold tracking-normal leading-none text-center mr-12">
               <span>Welcome </span>{" "}
-              {name.charAt("0").toUpperCase() + name.slice(1)}
+              
             </p>
           </div>
 
@@ -50,12 +50,7 @@ const NavBar = () => {
           </div>
           <div>{open && <Cart1 closeModal={() => setOpen(false)} />}</div>
 
-          <button
-            onClick={() => dispatch(logout())}
-            className="font-inter p-2 border rounded-md border-blue-500 text-base text-blue-600 font-medium tracking-normal leading-none text-center ml-12 hover:bg-blue-800 hover:text-white"
-          >
-            Logout
-          </button>
+          
         </div>
       </div>
       <div className="bg-black p-4 w-full flex justify-around items-center">
