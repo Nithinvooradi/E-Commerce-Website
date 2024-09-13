@@ -10,7 +10,7 @@ const NavBar = () => {
   
   const totalAmount = useSelector((state) => state.cart.totalAmount);
   
-  const { name } = user;
+ 
   const [open, setOpen] = useState(false);
   return (
     <div>
